@@ -1,37 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Rock Paper Scissors</title>
-    <style>
-        body{
-            background-color: rgb(25,25,25);
-            color:white;
-            font-family: arial;
-
-        }
-        .title{
-            font-size: 30px;
-            font-weight: bold;
-        }
-        .move-icon{
-            height: 50px;
-            
-        }
-        .move-button{
-          background-color: transparent;
-          border: 3px solid white;
-          width: 120px;
-          height: 120px;
-          border-radius: 60px;
-          margin-right: 10px;
-          cursor: pointer;
-        }
-        .result{
-          font-size: 25px;
-          font-weight: bold;
-          margin-top: 50px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <p class="title">Rock Paper Scissors</p>
@@ -43,9 +15,9 @@
       playGame('paper');
     " class="move-button"><img src="r-p-s_img/paper-emoji.png" class="move-icon"></button>
 
-    <button onclick="
-      playGame('scissors');
-    " class="move-button"><img src="r-p-s_img/scissors-emoji.png" class="move-icon"></button>
+    <button onclick="playGame('scissors');" class="move-button">
+      <img src="r-p-s_img/scissors-emoji.png" class="move-icon">
+    </button>
 
     <p class="js-result"></p>
     <p class="js-moves"></p>
